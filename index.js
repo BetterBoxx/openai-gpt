@@ -1,7 +1,4 @@
-import * as dotenv from "dotenv";
 import https from "follow-redirects/https.js";
-
-dotenv.config({ path: "./.env" });
 
 const options = {
 	method: "POST",
