@@ -47,7 +47,7 @@ export function openAIChat(msg) {
 				},
 			],
 			temperature: 0.7,
-			user: msg.sender.name,
+			user: Buffer.from(msg.sender.name).toString("base64"),
 		});
 
 		req.write(postData);
